@@ -1,0 +1,17 @@
+
+spring:
+  application:
+    name: order-service
+  cloud:
+    config:
+      discovery:
+        service-id: CONFIG-SERVER
+        enabled: true
+      profile: master
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+

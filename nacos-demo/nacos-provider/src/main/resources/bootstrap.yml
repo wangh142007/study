@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: nacos-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 39.106.121.113:8848
+      config:
+        server-addr: 39.106.121.113:8848
+        file-extension: yaml
+        prefix: nacos-provider
+  profiles:
+    active: dev

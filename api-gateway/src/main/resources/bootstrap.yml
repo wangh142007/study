@@ -1,0 +1,24 @@
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    config:
+      discovery:
+        service-id: CONFIG-SERVER
+        enabled: true
+      profile: master
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://172.24.52.3:8761/eureka/
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    prefer-ip-address: true
+
+
+
+
+

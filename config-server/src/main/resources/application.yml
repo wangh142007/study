@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/wh142032207/config-server
+          username: 419264755@qq.com
+          password: wanghao00
+          timeout: 5
+          default-label: master
+
+
+server:
+  port: 9100
+
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
